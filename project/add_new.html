@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add New Portal</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header class="header_contr">
+
+		<a href="http://127.0.0.1:5500/index.html"><img class="logo" src="img/logo.jpg"></a>
+
+		<div class="title_1">Thought Focus</div>
+
+		<div class="social">
+			<a href="https://www.linkedin.com/company/thoughtfocus"><img class="social_1" src="img/lknin.jfif"
+					width="100px" height="20px"></a>
+
+			<a href="https://www.facebook.com/ThoughtFocusTec/"><img class="social_1" src="img/fb.jpg" width="100px"
+					height="20px"></a>
+
+			<a href="https://thoughtfocus.com/careers/"><img class="social_1" src="img/wa.jpg" width="100px"
+					height="20px"></a>
+		</div>
+
+	</header>
+
+	<div class="addnew_container">
+
+		<ul class="head_2">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="http://127.0.0.1:5500/view.html">View</a>
+			</li>
+			<li>
+				<a href="http://127.0.0.1:5500/remove_employee.html">Remove</a>
+			</li>
+			<li>
+				<a href="http://127.0.0.1:5500/search_employee.html">Search</a>
+			</li>
+			<li>
+				<script type="text/javascript"> 
+					function display_c(){
+					var refresh=1000; // Refresh rate in milli seconds
+					mytime=setTimeout('display_ct()',refresh)
+					}
+					
+					function display_ct() {
+					var x = new Date()
+					document.getElementById('ct').innerHTML = x;
+					display_c();
+					 }
+					</script>
+					</head>
+					
+					<body onload=display_ct();>
+					<span id='ct' ></span>
+					
+					</body>
+				</li>
+		</ul>
+
+	</div>
+
+	<table>
+		<tr>
+			<td>
+				<form autocomplete="off" onsubmit="onFormSubmit()">
+					<div>
+						<label for="SINo">SINo</label>
+						<input type="text" name="SINo" id="SINo">
+					</div>
+					<div>
+						<label for="Eid">Eid</label>
+						<input type="text" name="Eid" id="Eid">
+					</div>
+					<div>
+						<label for="Name">Name</label>
+						<input type="text" name="Name" id="Name">
+					</div>
+					<div>
+						<label for="Dept">Dept</label>
+						<input type="text" name="Dept" id="Dept">
+					</div>
+					<div>
+						<label for="Skill">Skill</label>
+						<input type="text" name="Skill" id="Skill">
+					</div>
+					<div>
+						<label for="Salary">Salary</label>
+						<input type="text" name="Salary" id="Salary">
+					</div>
+
+					<div class="form_action--button">
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</div>
+				</form>
+
+			
+			</td>
+		</tr>
+	</table>
+	<script src='js/javascript.js'></script>
+
+
+
+	<footer>
+		<div class="btm_txt">All rights &#169;2022<span id="year"></span> </div>
+	</footer>
+
+</body>
+
+</html>

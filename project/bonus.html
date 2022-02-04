@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Bonus Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src='js/javascript.js'></script>
+</head>
+<body background="img/home.jpg">
+
+    <header class="header_contr">
+	
+		<a href="home.html"><img class="logo"src="img/logo.jpg"></a>
+		
+		<div class="title_1">Thought Focus</div>
+		
+		<div class="social">
+            <a href="https://www.linkedin.com/company/thoughtfocus"><img class="social_1" src="img/lknin.jfif" width="100px" height="20px"></a>
+            
+            <a href="https://www.facebook.com/ThoughtFocusTec/"><img class="social_1" src="img/fb.jpg" width="100px" height="20px"></a>
+            
+            <a href="https://thoughtfocus.com/careers/"><img class="social_1" src="img/wa.jpg" width="100px" height="20px"></a>
+        </div>
+		
+	</header>
+
+    <div class="view_container">
+		<ul class="head_2">
+			<li>
+                <a href="home.html">Home</a>
+            </li>
+			<li>
+                <a href="http://127.0.0.1:5500/add_new.html">Add New</a>
+            </li>
+			<li>
+                <a href="http://127.0.0.1:5500/view.html">View</a>
+            </li>
+			<li>
+                <a href="http://127.0.0.1:5500/search_employee.html">Search</a>
+            </li>
+            <li>
+                <script type="text/javascript"> 
+                    function display_c(){
+                    var refresh=1000; // Refresh rate in milli seconds
+                    mytime=setTimeout('display_ct()',refresh)
+                    }
+                    
+                    function display_ct() {
+                    var x = new Date()
+                    document.getElementById('ct').innerHTML = x;
+                    display_c();
+                     }
+                    </script>
+                    </head>
+                    
+                    <body onload=display_ct();>
+                    <span id='ct' ></span>
+                    
+                    </body>
+                </li>
+		</ul>
+        </div>
+
+        <footer>
+            <div class="btm_txt">All rights &#169; 2022<span id="year"></span></div>
+        </footer>
+    </div>
+
+</body>
+</html>
